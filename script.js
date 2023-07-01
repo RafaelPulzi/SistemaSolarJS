@@ -1,10 +1,36 @@
 function universo() {
   var background = document.getElementById('universo')
-  background.style.backgroundColor = '#000000';
+  background.style.backgroundColor = '#171717';
 }
 
-
 universo();
+
+function styleScrollbar() {
+  var style = document.createElement('style');
+  style.innerHTML = `
+    /* Estilos da barra de rolagem */
+    ::-webkit-scrollbar {
+      width: 10px; /* Largura da barra de rolagem */
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: #f1f1f1; /* Cor do fundo da barra de rolagem */
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #888; /* Cor do polegar da barra de rolagem */
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #555; /* Cor do polegar da barra de rolagem ao passar o mouse */
+    }
+  `;
+
+  document.head.appendChild(style);
+}
+
+// Chame a função para estilizar a barra de rolagem
+styleScrollbar();
 
 function resizeCanvas() {
   var canvas = document.getElementById('canvas');
@@ -12,16 +38,16 @@ function resizeCanvas() {
   canvas.style.top = '0';
   canvas.style.left = '0';
   canvas.style.width = window.innerWidth + 'px';
-  canvas.style.height = window.innerHeight + 'px';
+  canvas.style.height = (window.innerHeight + 850) + 'px';
   canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  document.body.style.height = window.innerHeight + 'px'; // Ajusta a altura do <body> para corresponder à altura do canvas
+  canvas.height = window.innerHeight + 850;
+  document.body.style.height = (window.innerHeight + 850) + 'px'; // Ajusta a altura do <body> para corresponder à altura do canvas
 }
 
 window.addEventListener('resize', resizeCanvas);
 
 // Inicialização
-resizeCanvas();
+
 
 function animate() {
   var canvas = document.getElementById('canvas');
@@ -159,5 +185,5 @@ function animate() {
 
   draw();
 }
-
+resizeCanvas();
 animate();
