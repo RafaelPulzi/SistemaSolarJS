@@ -89,6 +89,28 @@ function animate() {
     context.fillStyle = 'rgb(254, 169, 26)';
     context.fill();
 
+    var radiusSol = 70; // Radius of the sol
+    var xSol = centerXSOL; // X-coordinate of the sol (center of the canvas)
+    var ySol = centerYSOL; // Y-coordinate of the sol (center of the canvas)
+
+    // Create a glowing effect for the sol
+    context.shadowBlur = 20;
+    context.shadowColor = 'rgb(254, 169, 26)';
+    context.shadowOffsetX = 0;
+    context.shadowOffsetY = 0;
+
+    // Draw the sol with the glowing effect
+    context.beginPath();
+    context.arc(xSol, ySol, radiusSol, 0, 2 * Math.PI, false);
+    context.fillStyle = 'rgb(254, 169, 26)';
+    context.fill();
+
+    // Reset the shadow properties
+    context.shadowBlur = 0;
+    context.shadowColor = 'rgba(0, 0, 0, 0)';
+    context.shadowOffsetX = 0;
+    context.shadowOffsetY = 0;
+
     // Mercurio
     // Calculo da Mercurio em relação ao sol
     var radiusMercurio = 20; // Raio de Mercurio
