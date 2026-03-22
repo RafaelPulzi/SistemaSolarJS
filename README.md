@@ -1,6 +1,6 @@
 # 🌌 Sistema Solar JS — Cosmic Visualizer
 
-![GitHub license](https://img.shields.io/github/license/RafaelPulzi/SistemaSolarJS)
+[![MIT License](https://img.shields.io/github/license/RafaelPulzi/SistemaSolarJS)](https://github.com/RafaelPulzi/SistemaSolarJS/blob/main/LICENSE)
 ![JavaScript](https://img.shields.io/badge/language-JavaScript-yellow)
 ![Canvas API](https://img.shields.io/badge/API-Canvas-orange)
 
