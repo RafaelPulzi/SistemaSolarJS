@@ -100,7 +100,7 @@ Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) par
 
 ## 📬 Contato
 
-**Rafael Pulzi** - [Seu Link do LinkedIn/Portfólio]
+**Rafael Pulzi** - [LinkedIn](https://www.linkedin.com/in/rafael-atala-pulzi-6392b21a6/)
 Link do Projeto: [https://github.com/RafaelPulzi/SistemaSolarJS](https://github.com/RafaelPulzi/SistemaSolarJS)
 
 ---
